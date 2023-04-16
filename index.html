@@ -1,13 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<html>
+  <head>
     <title>Calculadora</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input type="text" name="display" id="display" readonly>
+        <div class="row">
+          <div class="col-25">
+            <input type="button" value="7" onclick="addToDisplay('7')">
+          </div>
+          <div class="col-25">
+            <input type="button" value="8" onclick="addToDisplay('8')">
+          </div>
+          <div class="col-25">
+            <input type="button" value="9" onclick="addToDisplay('9')">
+          </div>
+          <div class="col-25">
+            <input type="button" value="/" onclick="addToDisplay('/')">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <input type="button" value="4" onclick="addToDisplay('4')">
+          </div>
+          <div class="col-25">
+            <input type="button" value="5" onclick="addToDisplay('5')">
+          </div>
+          <div class="col-25">
+            <input type="button" value="6" onclick="addToDisplay('6')">
+          </div>
+          <div class="col-25">
+            <input type="button" value="*" onclick="addToDisplay('*')">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <input type="button" value="1" onclick="addToDisplay('1')">
+        </div>
+        <div class="col-25">
+          <input type="button" value="2" onclick="addToDisplay('2')">
+        </div>
+        <div class="col-25">
+          <input type="button" value="3" onclick="addToDisplay('3')">
+        </div>
+        <div class="col-25">
+          <input type="button" value="-" onclick="addToDisplay('-')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <input type="button" value="0" onclick="addToDisplay('0')">
+        </div>
+        <div class="col-25">
+          <input type="button" value="." onclick="addToDisplay('.')">
+        </div>
+        <div class="col-25">
+          <input type="button" value="C" onclick="clearDisplay()">
+        </div>
+        <div class="col-25">
+          <input type="button" value="+" onclick="addToDisplay('+')">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <input type="button" value="=" onclick="calculate()">
+        </div>
+        <div class="col-50">
+          <input type="button" value="CE" onclick="clearEntry()">
+        </div>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
+
+<script src="script.js"></script>
